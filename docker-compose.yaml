@@ -1,0 +1,12 @@
+version: '3'
+services:
+  database:
+    image: mariadb:10.7.3
+    restart: always
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./data:/var/lib/mysql
+    environment:
+      MARIADB_ROOT_PASSWORD: Eesa0Apea9ohfaSh
+    ports:
+      - "3306:3306"
